@@ -1,0 +1,122 @@
+#main{
+    background-color: aliceblue;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    /* position: absolute; */
+}
+body{
+    background-color: aqua;
+    /* display: block; */
+}
+
+#logo{
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+    margin: auto;
+    width: 990px;
+    height: 250px;
+    border: 3px solid darkorange;
+    /* padding-bottom: 5px; */
+    margin-bottom: 5px;
+}
+#logo img{
+    width: 100%;
+    height: 100%;
+    /* border: 3px solid blue; */
+}
+#navbar{
+    display: flex;
+    /* margin-left: 70%; */
+    background-color: lightblue;
+    padding-left: 75%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 5px ;
+    border: 1.8px solid red;
+}
+
+.nv{
+    margin-right: 10px;
+    background-color: darkorchid;
+    font-size: small;
+
+}
+
+#container{
+    margin-bottom: 3%;
+}
+.slider{
+    background-color: blueviolet;
+    display: flex;
+    width: 990px;
+    height: 250px;
+    border: 2px solid black;
+    /* justify-content: center; */
+
+}
+#brand{
+    /* margin:2px; */
+    border: 2px solid red;
+    float: left;
+    width: 33.33%;
+}
+#brand img{
+    width: 100%;
+    height:100%;
+}
+/* .slider::after{
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+.slider{
+    position: relative;
+    overflow: hidden;
+}
+
+#formpage{
+    margin:auto;
+    width: 305px;
+    background-color: aquamarine;
+    text-align: center;
+    /* padding-left: 40%; */
+    border: 2px solid red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* display: none; */
+
+}
+#formpage p{
+    text-align: center;
+    color: magenta;
+}
+form{
+    display: inline-block;
+}
+
+/* #grid{
+    border: 2px solid blueviolet;
+} */
+header{
+    text-align: center;
+}
+#maingrid{
+    display: grid;
+    /* border: 2px solid blueviolet; */
+    grid-template-columns: auto auto auto auto;
+
+}
+#subgrid{
+    /* display: flex; */
+    /* this id in the script tag     */
+    background-color: beige;
+    color: black;
+    border: 2px solid red;
+    margin: 5px;
+    width: 150px;
+    height: 100px;
+
+}
+

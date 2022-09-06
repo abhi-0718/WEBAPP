@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Carnival</title>
+    <link rel="stylesheet" href="./webpage.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <h1>Welcome To Shoe Carnival.</h1>
+    </header>
+
+    <!-- <section> -->
+        <div id="main">
+            <div id="logo">
+                <img src="./logo.jpg" alt="">
+            </div>
+
+            
+            <nav id="navbar">
+                <a  class="nv" href="#">HOME</a>
+                <a   id="addproduct" class="nv" href="#">ADD PRODUCTS</a>
+                <a class="nv" href="#">ABOUT US</a>
+            </nav>
+
+        <div id="container"  data-flickity='{"autoPlay": true}'>
+            <div class="slider">
+                <div id="brand" class="active">
+                    <img src="./slider1.jpg" alt="">
+                </div>
+                <div id="brand">
+                    <img src="./slider1.1.jpg" alt="">
+                </div>
+                <div id="brand">
+                    <img src="./slider1.2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="slider">
+                <div id="brand">
+                    <img src="./slider2.jpg" alt="">
+                </div>
+                <div id="brand">
+                    <img src="./slider2.1.jpg" alt="">
+                </div>
+                <div id="brand">
+                    <img src="./slider2.2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="slider">
+                <div id="brand">
+                    <img src="./slider3.jpg" alt="">
+                </div>
+                <div id="brand">
+                    <img src="./slider3.1.jpg" alt="">
+                </div>
+                <div id="brand">
+                    <img src="./slider3.2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+            <div id="formpage">
+                <form action="#">
+                    <p style="margin: auto;">Add Product</p>
+                    <label style="margin-left: 5px;" for="productNo:">Product No:
+                        <input type="number" name="" id="productNo" required/>
+                    </label><br><br>
+                    <label style="margin-left: 42px;" for="price">Price:
+                        <input type="number" name="" id="price" required/>
+                    </label><br><br>
+                    <label  style="margin-left: 41px;" for="stock">Stock:
+                        <input type="number" name="" id="stock" required/>
+                    </label><br><br>
+                    <button  style= "margin-bottom: 5px;" id="submit">Submit</button><br>
+                </form>
+            </div>
+
+            <div id="grid">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A repudiandae mollitia iste reprehenderit, vitae vel quis optio facere aut esse earum sed soluta fugiat blanditiis impedit quam. Quidem, dolore aut!</p>
+
+            </div>
+
+
+
+        </div>
+    <!-- </section> -->
+
+    <footer>
+        <h4>Email:shoecarnival@citiustech.com</h4>
+        <h4>Contact No:9098979594</h4>
+        <p style="background-color: red;">&copy;2022 Shoe Carnival </p>
+        
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $("#addproduct").click(function(){
+                $("form").prop("diplay","block");
+            })
+        })
+    </script>
+</body>
+
+
+</html>
